@@ -11,7 +11,8 @@ Delete .cache and restart
 2. Create a [new application](https://manage.auth0.com/#/applications) with Auth0.
 3. Under the application settings grab the domain and clientid
 4. While you're there add http://localhost:3000/callback to the allowed callbacks and http://localhost:3000/ to the allowed web origins.
-4. Replace the example.env with your data and rename it to '.env':
+5. Replace the `example.env` with your data
+6. Rename `example.env` to `.env`:
 
 ```
 DOMAIN=*your domain here*
@@ -19,7 +20,10 @@ CLIENTID=*your client ID here*
 REDIRECT=http://localhost:3000/callback
 ```
 
-### Google
+### Oauth integration
+Follow Auth0's [instructions](https://auth0.com/docs/connections/social/) for integrating with your project
+
+#### Google example
 1. Create a google project
 2. Follow Auth0's [instructions for integration](https://auth0.com/docs/connections/social/google)
 
