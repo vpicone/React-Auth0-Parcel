@@ -1,0 +1,6 @@
+{
+    "alias": "EXAMPLE_ALIAS",
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
