@@ -7,7 +7,7 @@ import { handleAuthentication } from '../services/auth';
 // You might load user data from mongodb or firebase in the handleAuthentication function and for those
 // cases we'll want to have this loading page because that takes time.
 export default class Callback extends Component {
-  authorizeIfAuthenticated = ({ location: { href } }) => {
+  authorizeIfAuthenticated = href => {
     if (/id_token|error/.test(href)) {
       // redirects to / when complete
       handleAuthentication();
@@ -15,7 +15,9 @@ export default class Callback extends Component {
   };
 
   render() {
-    this.authorizeIfAuthenticated(this.props);
+    // Reach router passes in location.href by default lets check it for the token
+    // Redirect to '/' if it's there.
+    this.authorizeIfAuthenticated(this.props.location.href);
     return (
       <div>
         <p>Loading...</p>
