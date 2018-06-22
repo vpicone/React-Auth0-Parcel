@@ -1,8 +1,8 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
-import App from '../components/App';
-import Callback from '../components/Callback';
+import App from './App';
+import Callback from './Callback';
 
 export default () => {
   return (

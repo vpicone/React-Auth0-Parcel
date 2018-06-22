@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { isAuthenticated } from '../services/auth';
-import Home from './Home';
-import LandingPage from './LandingPage';
+import Home from './pages/Home';
+import LandingPage from './pages/LandingPage';
 
 export default class App extends Component {
   render() {
