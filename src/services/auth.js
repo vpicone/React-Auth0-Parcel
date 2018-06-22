@@ -7,9 +7,9 @@ const auth0 = new WebAuth({
   domain: process.env.DOMAIN,
   clientID: process.env.CLIENTID,
   redirectUri: process.env.REDIRECT,
-  audience: process.env.AUDIENCE,
-  responseType: process.env.RESPONSE,
-  scope: process.env.SCOPE,
+  audience: `https://${process.env.DOMAIN}/userinfo`,
+  responseType: 'token id_token',
+  scope: 'openid profile',
 });
 
 export const login = () => {
