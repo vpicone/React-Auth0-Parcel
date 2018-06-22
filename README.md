@@ -21,7 +21,7 @@ SCOPE=openid profile
 
 ### Google
 1. Create a google project
-2. Follow Auth0's instructions for integration
+2. Follow Auth0's (instructions for integration)[https://auth0.com/docs/connections/social/google]
 
 ### Development
 1. npm install
