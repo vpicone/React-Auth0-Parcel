@@ -1,6 +1,9 @@
 # React-Auth0-Parcel
 Authentication with React, Auth0 and Parcel Bundeler
 
+## Weird unexplicable errors?
+Delete .cache and restart
+
 ## Useage
 
 ### Auth0
