@@ -33,6 +33,5 @@ Follow Auth0's [instructions](https://auth0.com/docs/connections/social/) for in
 
 ### Deployment
 1. Install [now.sh](https://now.sh) globally
-2. Rename `example.now.json` to `now.json`
-3. Replace the alias with whatever you want
-4. `npm run deploy` in the root directory
+2. Replace the alias parameter under "now" in the package.json with whatever you want
+3. `npm run deploy` in the root directory
