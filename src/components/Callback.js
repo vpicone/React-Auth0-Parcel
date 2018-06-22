@@ -8,7 +8,7 @@ import { handleAuthentication } from '../services/auth';
 // cases we'll want to have this loading page because that takes time.
 export default class Callback extends Component {
   authorizeIfAuthenticated = ({ location: { href } }) => {
-    if (/access_token|id_token|error/.test(href)) {
+    if (/id_token|error/.test(href)) {
       // redirects to / when complete
       handleAuthentication();
     }
