@@ -11,12 +11,9 @@ Authentication with React, Auth0 and Parcel Bundeler
 4. Replace the example.env with your data and rename it to '.env':
 
 ```
-DOMAIN=*domain here*
-CLIENTID=*client id here*
+DOMAIN=*your domain here*
+CLIENTID=*your client ID here*
 REDIRECT=http://localhost:3000/callback
-AUDIENCE=https://*domain here*/userinfo
-RESPONSE=token id_token
-SCOPE=openid profile
 ```
 
 ### Google
