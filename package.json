@@ -10,7 +10,7 @@
     "deploy": "now --dotenv && now alias"
   },
   "now": {
-    "alias": "Your Alias Here"
+    "alias": "EXAMPLE_ALIAS"
   },
   "keywords": [],
   "author": "",
