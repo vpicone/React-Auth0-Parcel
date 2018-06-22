@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import Auth from '../services/Auth';
-
-const auth = new Auth();
+import { handleAuthentication } from '../services/auth';
 
 export default class Callback extends Component {
-  handleAuthentication = ({ location: { href } }) => {
+  authorizeIfAuthenticated = ({ location: { href } }) => {
     if (/access_token|id_token|error/.test(href)) {
-      auth.handleAuthentication();
+      // redirects to / when complete
+      handleAuthentication();
     }
   };
+
   render() {
-    this.handleAuthentication(this.props);
-    console.log(this.props);
+    this.authorizeIfAuthenticated(this.props);
     return (
       <div>
         <p>Loading...</p>
