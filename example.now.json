@@ -1,6 +1,4 @@
 {
     "alias": "EXAMPLE_ALIAS",
-    "env": {
-        "NODE_ENV": "production"
-    }
+    "name": "EXAMPLE_NAME"
 }
