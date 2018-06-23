@@ -9,6 +9,9 @@
     "now-start": "serve -s dist",
     "deploy": "now --dotenv && now alias"
   },
+  "now": {
+    "alias": "EXAMPLE_ALIAS"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

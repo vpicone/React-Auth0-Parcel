@@ -33,8 +33,17 @@ Follow Auth0's [instructions](https://auth0.com/docs/connections/social/) for in
 
 ### Deployment
 1. Install [now.sh](https://now.sh) globally
+<<<<<<< HEAD
 2. Rename `example.now.json` to `now.json`
 3. Replace the alias and name with whatever you want
   * Name will be the prefix for all your staging links
   * Alias will be the actual name of your site (i.e. mysite.now.sh)
 4. `npm run deploy` in the root directory
+||||||| merged common ancestors
+2. Rename `example.now.json` to `now.json`
+3. Replace the alias with whatever you want
+4. `npm run deploy` in the root directory
+=======
+2. Replace the alias parameter under "now" in the package.json with whatever you want
+3. `npm run deploy` in the root directory
+>>>>>>> 3a4f5f730affdd3a0a9fcb8d458d9c27e863f1f8
