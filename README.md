@@ -33,6 +33,7 @@ Follow Auth0's [instructions](https://auth0.com/docs/connections/social/) for in
 
 ### Deployment
 1. Install [now.sh](https://now.sh) globally
+
 <<<<<<< HEAD
 2. Rename `example.now.json` to `now.json`
 3. Replace the alias and name with whatever you want
